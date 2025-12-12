@@ -1,168 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            padding: 50px;
-            max-width: 800px;
-            width: 100%;
-            text-align: center;
-            animation: fadeIn 0.6s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .random-string {
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 30px;
-            padding: 10px;
-            border: 2px dashed #667eea;
-            border-radius: 10px;
-        }
-
-        h1 {
-            color: #333;
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 15px;
-            margin: 20px 0;
-            font-size: 2em;
-            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
-            transition: transform 0.3s ease;
-        }
-
-        h2:hover {
-            transform: translateY(-5px);
-        }
-
-        h3 {
-            color: #555;
-            font-size: 1.8em;
-            margin: 15px 0;
-        }
-
-        h4 {
-            color: #777;
-            font-size: 1.5em;
-            margin: 15px 0;
-            font-style: italic;
-        }
-
-        img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 15px;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            padding: 15px 40px;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 50px;
-            cursor: pointer;
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-            transition: all 0.3s ease;
-            margin-top: 20px;
-        }
-
-        button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
-        }
-
-        button:active {
-            transform: translateY(-1px);
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 30px 20px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            h3 {
-                font-size: 1.3em;
-            }
-
-            h4 {
-                font-size: 1.1em;
-            }
-        }
-    </style>
+     <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="random-string">{{ random_string }}</div>
-        <h1>Hello, World!</h1>
-        <h2>Hello, World!</h2>
-        <h3>Hello, World!</h3>
-        <h4>Hello, World!</h4>
-        <img src="https://example.com/image.png" alt="Example Image">
-        <button>Click Me</button>
-    </div>
+    {{ random_string }}
+    <h1>Hello, World!</h1>
+    <h2 style="background-color: red;">Hello, World!</h2>
+    <h3>Hello, World!</h3>
+    <h4>Hello, World!</h4>
+    <img src="https://example.com/image.png" alt="Example Image">
+    <button>Click Me</button>
+
 </body>
 
 </html>
